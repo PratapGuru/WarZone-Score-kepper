@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Tracker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="tracker.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="coloums is-half is-offset-one-quater">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-3 by 1">
+                        <img src="https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/warzone/common/social-share/zeus-s3-wz-social-share.jpg" alt="">
+                    </figure>
+                </div>
+                <h1 id="welcome" class="is-size-3">Welcome to Score Kepper for Call of Duty War Zone.</h1>
+                <header class="card-header">
+                    <p class="card-header-title">
+                        <h2 id="h2"></h2>
+                </header>
+                <div class="card-content">
+                    <div class="content">
+                        <h1 class="is-size-1"><span id="player1Display">0</span> to <span id="player2Display">0</span></h1>
+
+                        <form action="player1Name" id="player1form">
+                            <h2><label for="player1Name">Name of First Team</label></h2>
+                            <input type="text" name="player1Name" id="player1Names">
+                            <button id="team1" class="button is-link is-focused is-small">Enter to war zone</button>
+                        </form>
+                        <form action="player2Name" id="player2form">
+                            <h2><label for="player2Name">Name of Second Team</label></h2>
+                            <input type="text" name="player2Name" id="player2Names">
+                            <button id="team2" class="button is-danger is-focused is-small">Enter to war zone</button>
+                        </form>
+
+
+                        <div class="container">
+                            <span class="is-size-3 has-text-weight-semibold	">Use the button below to keep score.</span>
+                            <p class="is-size-5 has-text-weight-normal">There will total 15 round and each round have 5 point. The team which score 5 point first will be the winner of that round.
+                            </p>
+                        </div>
+
+                        <h2><label for="rounds" id="playto">Select Round:</label></h2>
+
+                        <div class="select is-rounded">
+                            <select name="" id="rounds">
+                        <option value="1">Round 1</option>
+                        <option value="2">Round 2</option>
+                        <option value="3">Round 3</option>
+                        <option value="4">Round 4</option>
+                        <option value="5">Round 5</option>
+                        <option value="6">Round 6</option>
+                        <option value="7">Round 7</option>
+                        <option value="8">Round 8</option>
+                        <option value="9">Round 9</option>
+                        <option value="10">Round 10</option>
+                        <option value="11">Round 11</option>
+                        <option value="12">Round 12</option>
+                        <option value="13">Round 13</option>
+                        <option value="14">Round 14</option>
+                        <option value="15">Round 15</option>
+                    </select>
+                        </div>
+                    </div>
+                </div>
+                <footer class="card-footer">
+                    <button id="button1" class="button is-link is-focused is-medium card-footer-item">+1 Player One</button>
+                    <button id="button2" class="button is-success is-focused is-medium  card-footer-item">+1 Player Two</button>
+                    <button id="reset" class="button is-danger is-focused is-medium card-footer-item">Reset</button>
+                </footer>
+                <ul id="playersList"><br>
+                    <li class="is-size-2"></li><br>
+                </ul>
+            </div>
+        </div>
+        <script src="tracker.js "></script>
+</body>
+
+</html>
